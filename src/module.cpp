@@ -4,14 +4,14 @@
 #include "calculate.hpp"
 
 namespace py = pybind11;
-PYBIND11_MODULE(rogistic, m)
+PYBIND11_MODULE(logistic, m)
 {
-    m.doc() = "calculate bifurcation of rogistic map";
+    m.doc() = "calculate bifurcation of logistic map";
 
     py::class_<Record>(m, "record")
         .def(py::init<int>())
         .def_readwrite("x_list", &Record::x_list)
         .def_readwrite("mu_list", &Record::mu_list);
 
-    m.def("rogistic", &rogistic);
+    m.def("logistic", &logistic);
 }

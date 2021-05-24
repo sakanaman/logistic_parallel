@@ -1,12 +1,12 @@
-#ifndef ROGISTIC_HPP
-#define ROGISTIC_HPP
+#ifndef CALCULATE_HPP
+#define CALCULATE_HPP
 
 #include <thread>
 #include <iostream>
 #include "record.hpp"
 
 
-Record rogistic(const double x0, const double mu0, const double delta_mu, const double iter_mu,
+Record logistic(const double x0, const double mu0, const double delta_mu, const double iter_mu,
                 const int m, const int N)
 {
     Record record(m * (iter_mu + 1));
