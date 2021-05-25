@@ -12,6 +12,10 @@
 - CMake (versionは3.18以上)
 
 ## 使い方
+(0)リポジトリのクローン
+```
+git clone --recursive https://github.com/sakanaman/logistic_parallel.git
+```
 (1) ライブラリのビルド
 ```
 mkdir build
